@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.englishtown.vertx.examples</groupId>
+    <artifactId>vertx-examples-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>com.englishtown.vertx</groupId>
+        <artifactId>oss-parent-vertx</artifactId>
+        <version>2.1.0</version>
+    </parent>
+
+    <modules>
+        <module>vertx-jersey-simple</module>
+    </modules>
+
+    <properties>
+        <vertx.version>3.2.0</vertx.version>
+        <vertx.hk2.version>2.1.0</vertx.hk2.version>
+        <vertx.jersey.version>4.2.0</vertx.jersey.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.englishtown.vertx</groupId>
+                <artifactId>vertx-hk2</artifactId>
+                <version>${vertx.hk2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.englishtown.vertx</groupId>
+                <artifactId>vertx-jersey</artifactId>
+                <version>${vertx.jersey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.englishtown.vertx</groupId>
+                <artifactId>vertx-jersey-jackson</artifactId>
+                <version>${vertx.jersey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.englishtown.vertx</groupId>
+                <artifactId>vertx-jersey-swagger</artifactId>
+                <version>${vertx.jersey.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,12 @@
+{
+  "hk2_binder": [
+    "com.englishtown.vertx.examples.hk2.MyBinder"
+  ],
+  "jersey": {
+    "host": "localhost",
+    "port": 8080,
+    "resources": [
+      "com.englishtown.vertx.examples.rest.resources"
+    ]
+  }
+}
